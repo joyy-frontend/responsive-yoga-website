@@ -23,6 +23,12 @@ p {
   font-weight: 400;
 }
 
+button {
+  border: none;
+  font-family: "Poppins", sans-serif;
+  align-self: flex-start;
+}
+
 .wrap {
   margin: 0 auto;
   max-width: 1440px;
@@ -148,18 +154,15 @@ input[type="checkbox"]:checked + label img {
   top: -30px;
   left: -30px;
 }
-button {
+.m-btn {
   background: linear-gradient(25deg, #ff52af, #9f53ff);
-  border: none;
   color: #fff;
   padding: 16px 48px 16px 28px;
   border-radius: 64px;
-  font-family: "Poppins", sans-serif;
-  align-self: flex-start;
   position: relative;
 }
 
-button::after {
+.m-btn::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -226,6 +229,7 @@ button::after {
 
 .box-group-data > p {
   position: relative;
+  width: calc(100% - 150px);
 }
 
 .box-group-data > p::before {
@@ -233,6 +237,32 @@ button::after {
   position: absolute;
   top: -42px;
   left: -25px;
+}
+
+.box-group-data a {
+  background-image: url(./img/list-ellipse-img.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 150px;
+  height: 143px;
+  position: relative;
+}
+
+.link-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link-btn svg {
+  width: 16px;
+  height: 16px;
 }
 
 /* health*/

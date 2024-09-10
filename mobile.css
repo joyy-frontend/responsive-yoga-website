@@ -84,7 +84,7 @@
     display: none;
   }
 
-  button {
+  .m-btn {
     align-self: center;
   }
 
@@ -105,13 +105,11 @@
 
   .box-group-data p {
     text-align: center;
+    width: 100%;
   }
   .box-group-data p::before {
     left: 0;
     width: 50px;
-  }
-  .box-group-data a {
-    width: 40%;
   }
 
   #health {
