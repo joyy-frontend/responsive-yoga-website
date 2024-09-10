@@ -6,7 +6,7 @@ body:has(#toggle:checked) {
 body:has(#toggle:checked) header {
   background-color: #14092a;
 }
-body:has(#toggle:checked) .sub-color {
+body:has(#toggle:checked) .text-color {
   color: #a094b8;
 }
 
