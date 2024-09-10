@@ -1,0 +1,323 @@
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Lora", serif;
+  font-weight: 500;
+}
+
+body {
+  background-color: #f5f0ff;
+  color: #220953;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  padding: 48px 160px;
+}
+
+.gradient-text {
+  background: linear-gradient(25deg, #ff52af, #9f53ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sub-color {
+  color: #4b3e65;
+}
+
+/* header */
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #f5f0ff;
+  z-index: 10;
+}
+
+header .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 160px !important;
+}
+
+nav,
+nav ul {
+  display: flex;
+  gap: 72px;
+}
+
+nav ul li a {
+  color: #220953;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu-btn,
+.close-btn {
+  display: none;
+}
+
+/* toggle-btn style */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+label img {
+  width: 20px;
+  height: 20px;
+}
+
+input[type="checkbox"]:checked + label img {
+  content: url(./img/sun.svg);
+}
+
+/* home */
+
+#home {
+  padding-top: 150px;
+}
+
+#home,
+#list,
+#health {
+  display: flex;
+  align-items: center;
+}
+
+.data-home {
+  display: flex;
+  flex-direction: column;
+  /* width: 60%; */
+  gap: 30px;
+}
+
+#home > img {
+  width: 52%;
+  margin-left: -6%;
+}
+
+.data-home > h2,
+.data-home > h2 span {
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.data-home > h2 {
+  background-image: url(./img/home-star.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.data-home h2 span {
+  display: inline-block;
+  padding: 0.1em;
+  border-radius: 16px;
+  background: linear-gradient(25deg, #ff52af, #9f53ff);
+  color: #f5f0ff;
+  rotate: 10deg;
+}
+
+.data-home > p {
+  font-size: 1rem;
+  width: 80%;
+  position: relative;
+}
+
+.data-home > p::before {
+  content: url(./img/home-circle.svg);
+  position: absolute;
+  top: -30px;
+  left: -30px;
+}
+button {
+  background: linear-gradient(25deg, #ff52af, #9f53ff);
+  border: none;
+  color: #fff;
+  padding: 16px 48px 16px 28px;
+  border-radius: 64px;
+  font-family: "Poppins", sans-serif;
+  align-self: flex-start;
+  position: relative;
+  font-size: 1rem;
+}
+
+button::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  right: 28px;
+  transform: translate(50%, -50%);
+  background-image: url(./img/btn-arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.number-wrap {
+  display: flex;
+  gap: 64px;
+}
+
+.number-wrap > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.number-wrap h2 {
+  font-size: 3.5rem;
+}
+.number-wrap p {
+  font-size: 0.813rem;
+}
+
+/* List */
+
+#list {
+  gap: 48px;
+}
+
+.box-group-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.box-group-data {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.box-group-list h2 {
+  font-size: 3.5rem;
+}
+
+.list-box {
+  position: relative;
+}
+
+.list-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-color: #e5d9fd;
+  border-radius: 200px;
+  z-index: 1;
+}
+
+.list-box img {
+  position: relative;
+  z-index: 2;
+}
+
+.box-group-data > p {
+  position: relative;
+  font-size: 0.875rem;
+}
+
+.box-group-data > p::before {
+  content: url(./img/liststar-2-img.svg);
+  position: absolute;
+  top: -42px;
+  left: -25px;
+}
+
+/* health*/
+
+#health {
+  gap: 32px;
+}
+
+.image-group {
+  position: relative;
+}
+
+.position-box {
+  padding: 8px 12px;
+  background-color: #fff;
+  border-radius: 12px;
+  display: inline-flex;
+  position: absolute;
+  font-weight: 700;
+}
+
+.heart-rate {
+  gap: 8px;
+  top: 12%;
+  left: 5%;
+}
+.svg-wrap {
+  background-color: #ffe6e5;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.svg-wrap svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.course {
+  flex-direction: column;
+  bottom: 7%;
+  right: 10%;
+}
+
+.data-health {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.data-health h3 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.data-health p {
+  font-size: 1rem;
+}

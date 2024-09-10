@@ -1,0 +1,94 @@
+@media screen and (max-width: 768px) {
+  .wrap {
+    padding: 32px 24px;
+  }
+
+  header .wrap {
+    padding: 15px 24px !important;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  nav {
+    gap: 24px;
+  }
+  .menu-btn {
+    display: block;
+  }
+
+  body:has(#menu:checked) nav ul,
+  body:has(#menu:checked) .close-btn {
+    display: block;
+  }
+  body:has(#menu:checked) .menu-btn {
+    display: none;
+  }
+
+  .close-btn {
+    position: absolute;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    padding: 72px 48px;
+    font-size: 0.938rem;
+    gap: 48px;
+  }
+
+  #home {
+    flex-direction: column;
+    padding-top: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home > div {
+    width: auto;
+  }
+
+  .data-home {
+    align-items: center;
+  }
+
+  .data-home > p {
+    font-size: 0.938rem;
+  }
+
+  .data-home > p::after {
+    content: url(./img/home-circle.svg);
+    position: absolute;
+    bottom: -30px;
+    right: 20%;
+  }
+
+  .data-home > p::before {
+    display: none;
+  }
+
+  button {
+    align-self: center;
+    font-size: 0.938rem;
+  }
+
+  .data-home > h2,
+  .data-home > h2 span {
+    font-size: 2.75rem;
+    text-align: center;
+  }
+
+  .data-home > h2 {
+    background-position: bottom left;
+    background-size: 50px;
+  }
+}
