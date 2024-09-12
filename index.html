@@ -2,93 +2,229 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="./main.css" />
   <link rel="stylesheet" href="./mobile.css" />
+  <link rel="stylesheet" href="font.css" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="mobile.css" />
+  <link rel="stylesheet" href="darkmode.css" />
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
   <title>Responsive Yoga Website</title>
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="routine-container">
-      <div class="routine-text">
-        <span class="routine-sub-text-1">Anytime, Any Place, Any Workout</span>
-        <span class="routine-sub-text-2">Take your routine at any time of your day, with the new videos and with
-          the teachers who will guide you.</span>
-        <button class="btn-started">Get Started Free &rarr;</button>
+  <header>
+    <div class="wrap">
+      <div class="logo">
+        <h2 class="gradient-text h2">Yoga</h2>
       </div>
-      <div class="routine-img">
-        <div class="img-overlay overlay-1">
-          <i class="fas fa-running"></i>
-          <span class="overlay-text-1">High Quality Video</span>
+      <nav>
+        <ul>
+          <li><a href="#" class="gradient-text normal">Home</a></li>
+          <li><a href="#" class="normal">Health</a></li>
+          <li><a href="#" class="normal">Routine</a></li>
+          <li><a href="#" class="normal">Follow</a></li>
+        </ul>
+        <div class="toggle">
+          <input type="checkbox" id="toggle" />
+          <label for="toggle">
+            <img src="./img/moon.svg" alt="be dark mode" />
+          </label>
         </div>
-        <div class="img-overlay">
-          <i class="fas fa-running"></i>
-          <span class="overlay-text">Professional Trainer</span>
-        </div>
-        <img src="./assets/routine-yoga-1.png" alt="routine-yoga-1" id="routine-img-1" class="routine-img" />
-        <img src="./assets/routine-yoga-2.png" alt="routine-yoga-2" id="routine-img-2" class="routine-img" />
-      </div>
+
+        <input type="checkbox" id="menu" />
+        <label for="menu" class="menu-btn">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M4.5 9.5C3.90905 9.5 3.32389 9.3836 2.77792 9.15746C2.23196 8.93131 1.73588 8.59984 1.31802 8.18198C0.900156 7.76412 0.568688 7.26804 0.342542 6.72208C0.116396 6.17611 0 5.59095 0 5C0 4.40905 0.116396 3.82389 0.342542 3.27792C0.568688 2.73196 0.900156 2.23588 1.31802 1.81802C1.73588 1.40016 2.23196 1.06869 2.77792 0.842542C3.32389 0.616396 3.90905 0.5 4.5 0.5C5.69347 0.5 6.83807 0.974106 7.68198 1.81802C8.52589 2.66193 9 3.80653 9 5C9 6.19347 8.52589 7.33807 7.68198 8.18198C6.83807 9.02589 5.69347 9.5 4.5 9.5ZM5 19.5C3.80653 19.5 2.66193 19.0259 1.81802 18.182C0.974106 17.3381 0.5 16.1935 0.5 15C0.5 13.8065 0.974106 12.6619 1.81802 11.818C2.66193 10.9741 3.80653 10.5 5 10.5C6.19347 10.5 7.33807 10.9741 8.18198 11.818C9.02589 12.6619 9.5 13.8065 9.5 15C9.5 16.1935 9.02589 17.3381 8.18198 18.182C7.33807 19.0259 6.19347 19.5 5 19.5ZM15 9.5C14.4091 9.5 13.8239 9.3836 13.2779 9.15746C12.732 8.93131 12.2359 8.59984 11.818 8.18198C11.4002 7.76412 11.0687 7.26804 10.8425 6.72208C10.6164 6.17611 10.5 5.59095 10.5 5C10.5 4.40905 10.6164 3.82389 10.8425 3.27792C11.0687 2.73196 11.4002 2.23588 11.818 1.81802C12.2359 1.40016 12.732 1.06869 13.2779 0.842542C13.8239 0.616396 14.4091 0.5 15 0.5C16.1935 0.5 17.3381 0.974106 18.182 1.81802C19.0259 2.66193 19.5 3.80653 19.5 5C19.5 6.19347 19.0259 7.33807 18.182 8.18198C17.3381 9.02589 16.1935 9.5 15 9.5ZM15 19.5C13.8065 19.5 12.6619 19.0259 11.818 18.182C10.9741 17.3381 10.5 16.1935 10.5 15C10.5 13.8065 10.9741 12.6619 11.818 11.818C12.6619 10.9741 13.8065 10.5 15 10.5C16.1935 10.5 17.3381 10.9741 18.182 11.818C19.0259 12.6619 19.5 13.8065 19.5 15C19.5 16.1935 19.0259 17.3381 18.182 18.182C17.3381 19.0259 16.1935 19.5 15 19.5ZM4.5 7.5C5.16304 7.5 5.79893 7.23661 6.26777 6.76777C6.73661 6.29893 7 5.66304 7 5C7 4.33696 6.73661 3.70107 6.26777 3.23223C5.79893 2.76339 5.16304 2.5 4.5 2.5C3.83696 2.5 3.20107 2.76339 2.73223 3.23223C2.26339 3.70107 2 4.33696 2 5C2 5.66304 2.26339 6.29893 2.73223 6.76777C3.20107 7.23661 3.83696 7.5 4.5 7.5ZM5 17.5C5.66304 17.5 6.29893 17.2366 6.76777 16.7678C7.23661 16.2989 7.5 15.663 7.5 15C7.5 14.337 7.23661 13.7011 6.76777 13.2322C6.29893 12.7634 5.66304 12.5 5 12.5C4.33696 12.5 3.70107 12.7634 3.23223 13.2322C2.76339 13.7011 2.5 14.337 2.5 15C2.5 15.663 2.76339 16.2989 3.23223 16.7678C3.70107 17.2366 4.33696 17.5 5 17.5ZM15 7.5C15.663 7.5 16.2989 7.23661 16.7678 6.76777C17.2366 6.29893 17.5 5.66304 17.5 5C17.5 4.33696 17.2366 3.70107 16.7678 3.23223C16.2989 2.76339 15.663 2.5 15 2.5C14.337 2.5 13.7011 2.76339 13.2322 3.23223C12.7634 3.70107 12.5 4.33696 12.5 5C12.5 5.66304 12.7634 6.29893 13.2322 6.76777C13.7011 7.23661 14.337 7.5 15 7.5ZM15 17.5C15.663 17.5 16.2989 17.2366 16.7678 16.7678C17.2366 16.2989 17.5 15.663 17.5 15C17.5 14.337 17.2366 13.7011 16.7678 13.2322C16.2989 12.7634 15.663 12.5 15 12.5C14.337 12.5 13.7011 12.7634 13.2322 13.2322C12.7634 13.7011 12.5 14.337 12.5 15C12.5 15.663 12.7634 16.2989 13.2322 16.7678C13.7011 17.2366 14.337 17.5 15 17.5Z"
+              fill="#220953" />
+          </svg>
+        </label>
+        <label for="menu" class="close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z"
+              fill="#220953" />
+          </svg>
+        </label>
+      </nav>
     </div>
+  </header>
 
-    <!-- <div class="follow-container">
-      <div class="follow-img">
-        <img src="./assets/follow-yoga-1.png" alt="" class="edge-img top-left">
-        <img src="./assets/follow-yoga-2.png" alt="" class="edge-img top-right">
-        <img src="./assets/follow-yoga-3.png" alt="" class="edge-img bottom-left">
-        <img src="./assets/follow-yoga-4.png" alt="" class="edge-img bottom-right">
-      </div>
-      <div class="follow-center-content">
-        <h1>Follow Us On Instagram</h1>
-        <p>#YOGA</p>
-        <button class="btn-follow">
-          <span class="btn-text">Follow</span>
-          <span class="btn-arrow">&rarr;</span>
-        </button>
-      </div>
-    </div> -->
-
-    <!-- <div class="join-container">
-      <h1>Join Our newsletter</h1>
-      <p>Subscribe to our newsletter to be aware of many things on discounts, gifts, training and much more. Just
-        enter your email.</p>
-      <div class="subs-container">
-        <div class="subs-text">
-          <input type="text" placeholder="For latest update send mail">
-          <button>Subscribe &rarr;</button>
+  <main>
+    <section id="home" class="wrap">
+      <div class="data-home">
+        <h2 class="biggest">
+          Choose Your <br />Best <span class="biggest">Yoga</span>
+          <br />Teacher
+        </h2>
+        <p class="text-color normal">
+          Calm your mind and body with the best yoga teachers available, relax
+          your day and stay positive.
+        </p>
+        <button class="normal m-btn">Get Started Free</button>
+        <div class="number-wrap">
+          <div>
+            <h2 class="big">300+</h2>
+            <p class="small">Yoga Class</p>
+          </div>
+          <div>
+            <h2 class="big">40+</h2>
+            <p class="small">Participants</p>
+          </div>
         </div>
       </div>
-    </div> -->
-    <!-- <footer>
-      <div class="yoga-grid-container">
-        <h1>Yoga</h1>
-        <span>Take care of your health and your mind with the best Yoga classes.</span>
+      <img src="./img/home-yoga.png" alt="yoga people" />
+    </section>
+    <section id="list" class="wrap">
+      <div class="box-group-list">
+        <h2 class="big">#01</h2>
+        <div class="list-box">
+          <img src="./img/list-yoga.png" alt="list-yoga" />
+        </div>
       </div>
-      <div class="address-container">
-        <h1>Address</h1>
-        <span>12345 M/01 Sol</span>
-        <span>Avenue, Lima, Peru</span>
+      <div class="box-group-data">
+        <p class="text-color normal">
+          Get a list of specific influencers in your niche at your fingertips
+          so you can focus on managing your status.
+        </p>
+        <a href="#">
+          <img src="./img/Button-link-list.png" alt="Button-link-list" />
+        </a>
       </div>
-      <div class="contact-container">
-        <span>+123 456 7890</span>
-        <span>yoga@email.com</span>
+    </section>
+    <section id="health" class="wrap">
+      <div class="image-group">
+        <img src="./img/health-fitness.png" alt="health-fitness" />
+        <div class="heart-rate position-box">
+          <div class="svg-wrap">
+            <svg viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.0001 0C24.0507 0 27.3334 3.33333 27.3334 8C27.3334 17.3333 17.3334 22.6667 14.0001 24.6667C10.6667 22.6667 0.666748 17.3333 0.666748 8C0.666748 3.33333 4.00008 0 8.00008 0C10.4801 0 12.6667 1.33333 14.0001 2.66667C15.3334 1.33333 17.5201 0 20.0001 0Z"
+                fill="#FF2D27" />
+            </svg>
+          </div>
+          <div>
+            <p class="small">Heart Rate</p>
+            <p class="gradient-text smaller">168 bpm</p>
+          </div>
+        </div>
+        <div class="course position-box">
+          <p class="gradient-text smaller">500+</p>
+          <p class="small">Free Courses</p>
+        </div>
       </div>
-      <div class="office-container">
-        <span>Monday - Saturday</span>
-        <span>9AM - 10PM</span>
+      <div class="data-health">
+        <h3 class="bigger">Bring Happiness To Good Health!</h3>
+        <p class="text-color normal">
+          If you take care of your good health, take care of your mentality
+          and lead a healthy life with positive thoughts every day.
+        </p>
+        <button class="normal m-btn">Let's Start</button>
+      </div>
+    </section>
+    <section id="routine" class="wrap">
+      <div class="routine-container">
+        <div class="routine-text">
+          <span class="bigger routine-sub-text-1">Anytime, Any Place, Any Workout</span>
+          <span class="routine-sub-text-2">Take your routine at any time of your day, with the new videos and with
+            the teachers who will guide you.</span>
+          <button class="btn-started">Get Started Free &rarr;</button>
+        </div>
+        <div class="routine-img">
+          <div class="img-overlay overlay-1">
+            <i class="fas fa-play-circle"></i>
+            <span class="overlay-text-1">High Quality Video</span>
+          </div>
+          <div class="img-overlay overlay-2">
+            <i class="fas fa-running"></i>
+            <span class="overlay-text">Professional Trainer</span>
+          </div>
+          <div class="routine-img-container">
+            <img src="./assets/routine-yoga-1.png" alt="routine-yoga-1" id="routine-img-1" class="routine-img" />
+            <img src="./assets/routine-yoga-2.png" alt="routine-yoga-2" id="routine-img-2" class="routine-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="follow" class="wrap">
+      <div class="follow-container">
+        <div class="follow-top">
+          <img src="./assets/follow-yoga-1.png" alt="" class="edge-img top-left">
+          <div class="follow-center-content">
+            <h4 class="bigger">Follow Us On Instagram</h4>
+            <h4 class="bigger yoga-text">#YOGA</h4>
+            <button class="btn-follow">
+              <span class="btn-text">Follow</span>
+              <span class="btn-arrow">&rarr;</span>
+            </button>
+          </div>
+          <img src="./assets/follow-yoga-2.png" alt="" class="edge-img top-right">
+        </div>
+        <div class="follow-bottom">
+          <img src="./assets/follow-yoga-3.png" alt="" class="edge-img bottom-left">
+          <img src="./assets/follow-yoga-4.png" alt="" class="edge-img bottom-right">
+        </div>
+      </div>
+    </section>
+    <section id="join" class="wrap">
+      <div class="join-container">
+        <p class="bigger join-form">Join Our newsletter</p>
+        <p class="subs-sen">Subscribe to our newsletter to be aware of many things on discounts,
+          gifts, training and much more. Just enter your email.</p>
+        <div class="subs-container">
+          <div class="subs-text">
+            <input type="text" placeholder="For latest update send mail" />
+            <button>Subscribe &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-container">
+      <div class="top-container">
+        <div class="left-side">
+          <h2 class="gradient-text h2">Yoga</h2>
+          <p>Take care of your health and your mind with the best Yoga classes.</p>
+        </div>
+        <div class="right-side">
+          <div class="address-container">
+            <p class="footer-title">Address</p>
+            <p class="info1">12345 M/01 Sol</p>
+            <p class="info2">Avenue, Lima, Peru</p>
+          </div>
+          <div class="contact-container">
+            <p class="footer-title">Contact</p>
+            <p class="info1">+123 456 7890</p>
+            <p class="info2">yoga@email.com</p>
+          </div>
+          <div class="office-container">
+            <p class="footer-title">Office</p>
+            <p class="info1">Monday - Saturday</p>
+            <p class="info2">9AM - 10PM</p>
+          </div>
+        </div>
       </div>
       <div class="info-container">
         <div class="social-icons">
-          <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
           <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
           <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
           <a href="https://youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
         </div>
-        <span>&copy; Copyright Bedimcode. All rights reserved</span>
+        <p>&copy; Copyright Bedimcode. All rights reserved</p>
       </div>
-    </footer> -->
+    </footer>
+  </main>
   </div>
 </body>
 

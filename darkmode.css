@@ -1,0 +1,44 @@
+/* dark-mode */
+body:has(#toggle:checked) {
+  background-color: #14092a;
+  color: #d1c0f1;
+}
+
+body:has(#toggle:checked) span {
+  color: #d1c0f1;
+}
+
+body:has(#toggle:checked) header {
+  background-color: #14092a;
+}
+
+body:has(#toggle:checked) .text-color {
+  color: #a094b8;
+}
+
+body:has(#toggle:checked) .position-box {
+  background-color: #372a51;
+}
+
+body:has(#toggle:checked) nav ul li a {
+  color: #d1c0f1;
+}
+
+body:has(#toggle:checked) .list-box::after {
+  background-color: #372a51;
+}
+
+body:has(#toggle:checked) nav svg path {
+  /* stroke: #a094b8; */
+  fill: #d1c0f1;
+}
+
+body:has(#toggle:checked) footer {
+  background-color: #14092a;
+}
+
+@media screen and (max-width: 768px) {
+  body:has(#toggle:checked) nav ul {
+    background-color: rgba(26, 26, 26, 0.3);
+  }
+}
