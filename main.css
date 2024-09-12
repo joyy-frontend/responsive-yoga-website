@@ -26,7 +26,6 @@ p {
 button {
   border: none;
   font-family: "Poppins", sans-serif;
-  align-self: flex-start;
 }
 
 .wrap {
@@ -159,6 +158,7 @@ input[type="checkbox"]:checked + label img {
   color: #fff;
   padding: 16px 48px 16px 28px;
   border-radius: 64px;
+  align-self: flex-start;
   position: relative;
 }
 
