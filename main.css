@@ -409,10 +409,12 @@ input[type="checkbox"]:checked+label img {
   background-position: 0 0, 0 0;
   background-repeat: repeat;
   color: #000;
-  width: 205px;
+  width: 40%;
   height: 56px;
   font-size: 16px;
 }
+
+.overlay-2 {}
 
 .overlay-text,
 .overlay-text-1,
@@ -456,7 +458,6 @@ input[type="checkbox"]:checked+label img {
 }
 
 .follow-top img {
-  width: 280px;
   height: auto;
 }
 
@@ -490,16 +491,6 @@ input[type="checkbox"]:checked+label img {
   color: transparent;
 }
 
-.bottom-left {
-  bottom: -450px;
-  left: 171px;
-}
-
-.bottom-right {
-  bottom: -450px;
-  right: 170px;
-}
-
 .follow-center-content p {
   font-size: 24px;
   margin: 10px 0;
@@ -507,7 +498,6 @@ input[type="checkbox"]:checked+label img {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-
 }
 
 .btn-follow {
@@ -603,7 +593,7 @@ input[type="checkbox"]:checked+label img {
   background-color: #1E0949;
 }
 
-.top-container {
+.footer-top-container {
   display: flex;
   flex-direction: row;
 }
@@ -681,4 +671,59 @@ input[type="checkbox"]:checked+label img {
   padding-top: 48px;
   padding-bottom: 68px;
   margin: 0 160px;
+}
+
+.routine-wrap {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.top-container {
+  position: relative;
+  align-items: flex-start;
+}
+
+.top-part {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  background-image:
+    linear-gradient(to right, #FCE5E5 1px, transparent 1px),
+    linear-gradient(to bottom, #FCE5E5 1px, transparent 1px);
+  background-size: 12px 12px;
+  background-position: 0 0, 0 0;
+  background-repeat: repeat;
+  z-index: 2;
+}
+
+.top-container img {
+  z-index: 2;
+  border: 10px solid transparent;
+  position: relative;
+  width: 90%;
+}
+
+
+.bottom-container img {
+  z-index: 1;
+  margin-top: -10%;
+  width: 90%;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.bottom-part {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 30%;
+  left: 0%;
+  z-index: 1;
 }
