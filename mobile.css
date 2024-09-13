@@ -24,10 +24,6 @@
     display: flex;
   }
 
-  nav ul {
-    justify-content: center;
-  }
-
   body:has(#menu:checked) .menu-btn {
     display: none;
   }
