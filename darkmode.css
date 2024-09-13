@@ -37,6 +37,12 @@ body:has(#toggle:checked) footer {
   background-color: #14092a;
 }
 
+body:has(#toggle:checked) .top-part {
+  background-image:
+    linear-gradient(to right, #14092a 1px, transparent 1px),
+    linear-gradient(to bottom, #14092a 1px, transparent 1px);
+}
+
 @media screen and (max-width: 768px) {
   body:has(#toggle:checked) nav ul {
     background-color: rgba(26, 26, 26, 0.3);
